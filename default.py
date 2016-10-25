@@ -13,7 +13,7 @@ class Dplay(object):
 
     # Shows.
     if len(self._params) == 0:
-      shows = Util.getResponseJson('http://it.dplay.com/api/v2/ajax/modules?items=1000&page_id=32&module_id=26')
+      shows = Util.getResponseJson('http://it.dplay.com/api/v2/ajax/modules?items=500&page_id=32&module_id=26')
       if shows.isSucceeded:
         for show in shows.body['data']:
           episodes = 0
